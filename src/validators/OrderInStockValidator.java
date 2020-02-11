@@ -1,6 +1,15 @@
+package validators;
+
+import orderComponents.Ingredients;
+import orderComponents.Order;
+import ordermaking.CoffeeMixer;
+import stock.StockManager;
+
 import java.util.HashMap;
 
-class OrderInStockValidator implements Validator {
+public class OrderInStockValidator implements Validator {
+
+    private StockManager stockManager = StockManager.getInstance();
 
     @Override
     public boolean validate (Order order) {
@@ -16,14 +25,18 @@ class OrderInStockValidator implements Validator {
 
         for(Ingredients ingredient: ingredients.keySet()){
 
-            int quantityInStock = StockManager.STOCK.get(ingredient);
+            int quantityInStock = stockManager.getStock().get(ingredient);
 
             if (quantityInStock<ingredients.get(ingredient)){
                 orderNotInStock(ingredient);
                 return false;
             }
+            //todo: I don't like it this way. either make one or allocate responsibility outside
+            else if (quantityInStock-ingredients.get(ingredient)<=5 && quantityInStock-ingredients.get(ingredient)>=0){
+                notifyEmptyOrLowTank(ingredient);
+            }
             else if (quantityInStock==ingredients.get(ingredient)){
-                notifyEmptyTank(ingredient);
+                notifyEmptyOrLowTank(ingredient);
             }
         }
         return true;
@@ -35,8 +48,8 @@ class OrderInStockValidator implements Validator {
     }
 
     //todo
-    private void notifyEmptyTank (Ingredients ingredients) {
-
+    private void notifyEmptyOrLowTank(Ingredients ingredient) {
+        stockManager.refillIngredient(ingredient);
     }
 
 }

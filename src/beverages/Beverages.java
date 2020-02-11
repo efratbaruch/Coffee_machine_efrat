@@ -1,4 +1,6 @@
-enum Beverages {
+package beverages;
+
+public enum Beverages {
 
     ESPRESSO,
     BLACK,

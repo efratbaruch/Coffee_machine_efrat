@@ -1,15 +1,23 @@
+package ordermaking;
+
+import apimethods.OrderReceiver;
+import orderComponents.Order;
+import validators.OrderInStockValidator;
+import validators.OrderValidator;
+import validators.Validator;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class CoffeeMakingManager {
 
-    void getAndDeliverOrder(){
+    public void getAndDeliverOrder(){
 
         Order order = takeOrder();
 
         if(validateOrder(order, getValidatorList())){
             System.out.println(new OrderMaker().prepareOrder(order));
         }
+
         closeOrder();
     }
 

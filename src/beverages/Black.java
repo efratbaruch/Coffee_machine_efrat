@@ -1,6 +1,10 @@
+package beverages;
+
+import orderComponents.Ingredients;
+
 import java.util.HashMap;
 
-class Black implements Beverage {
+public class Black implements Beverage {
 
     private HashMap<Ingredients, Integer> blackIngredients = new HashMap<>();
 

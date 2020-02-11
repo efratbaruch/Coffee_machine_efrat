@@ -1,10 +1,18 @@
+package apimethods;
+
+import beverages.Beverages;
+import orderComponents.CupSize;
+import orderComponents.Order;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class OrderReceiver {
 
+    //todo: export everything through external?
+    //todo: should read whole project and list what I want to change.
     //todo: do the tearDown trick?
-    Order assembleOrder() {
+    public Order assembleOrder() {
 
         offerCoffeeVariety();
 
@@ -67,7 +75,7 @@ public class OrderReceiver {
             if (orderTriesCounter>5){
                 System.out.println("Too many invalid order attempts. Goodbye!");
                 break;
-                //todo: see if I sould add a system shutdown method.
+                //todo: see if I should add a system shutdown method.
             }
 
             System.out.println("Invalid input, please try again.");
@@ -190,8 +198,8 @@ public class OrderReceiver {
         return chosenCupSize;
     }
 
-    boolean closeOrder () {
-        System.out.println("Order complete. Do you want to make another order? (yes/no)");
+    public boolean closeOrder () {
+        System.out.println("orderComponents.Order complete. Do you want to make another order? (yes/no)");
 
         Scanner scanner = new Scanner(System.in);
         String customerResponse = scanner.nextLine();
@@ -199,7 +207,7 @@ public class OrderReceiver {
         return customerResponse.equalsIgnoreCase("yes");
     }
 
-    void closeCoffeeMachine () {
+    public void closeCoffeeMachine () {
         System.out.println("Goodbye!");
     }
 }

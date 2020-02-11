@@ -1,8 +1,13 @@
-class BeverageFactory {
+package beverages;
 
-    //todo: add default
+import beverages.*;
 
-    Beverage getBeverage(Beverages beverages) {
+public class BeverageFactory {
+
+    //todo: add default parameter?
+    //todo: check all switch cases for breaks
+
+    public Beverage getBeverage(Beverages beverages) {
         switch (beverages) {
             case ESPRESSO:
                 return new Espresso();

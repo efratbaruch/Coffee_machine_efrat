@@ -1,6 +1,10 @@
+package ordermaking;
+
+import orderComponents.Order;
+
 import java.util.ArrayList;
 
-public class OrderMaker {
+class OrderMaker {
 
     //todo: search for exception protection for whole project
 

@@ -1,20 +1,26 @@
+package orderComponents;
+
+import beverages.Beverages;
+
 import java.util.ArrayList;
 
-class Order {
+public class Order {
 
-    Beverages beverage;
-    int sugar;
-    boolean milk;
-    CupSize size;
+    //todo: use a different object to prepare?
 
-    Order (Beverages beverage, int sugar, boolean milk, CupSize size){
+    public Beverages beverage;
+    public int sugar;
+    public boolean milk;
+    public CupSize size;
+
+    public Order (Beverages beverage, int sugar, boolean milk, CupSize size){
         this.beverage = beverage;
         this.sugar = sugar;
         this.milk = milk;
         this.size = size;
     }
 
-    ArrayList<String> getOrderList (){
+    public ArrayList<String> getOrderList (){
 
         ArrayList<String> orderList = new ArrayList<>();
 

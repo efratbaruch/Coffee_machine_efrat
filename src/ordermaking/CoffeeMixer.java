@@ -1,15 +1,21 @@
+package ordermaking;
+
+import beverages.BeverageFactory;
+import orderComponents.Ingredients;
+import orderComponents.Order;
+
 import java.util.HashMap;
 
-class CoffeeMixer {
+public class CoffeeMixer {
 
     private Order order;
     private HashMap<Ingredients, Integer> ingredientMap;
 
-    CoffeeMixer (Order order){
+    public CoffeeMixer (Order order){
         this.order = order;
     }
 
-    HashMap <Ingredients, Integer>  getMixedIngredients () {
+    public HashMap <Ingredients, Integer>  getMixedIngredients () {
         addIngredientsOfBeverage();
         addWaterIngredient();
         addMilkIngredient();

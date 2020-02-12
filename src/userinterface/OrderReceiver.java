@@ -1,4 +1,4 @@
-package apimethods;
+package userinterface;
 
 import beverages.Beverages;
 import orderComponents.CupSize;
@@ -7,19 +7,17 @@ import orderComponents.Order;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+//todo: search for exception protection for whole project: from outside
+
 public class OrderReceiver {
 
-    //todo: export everything through external?
-    //todo: should read whole project and list what I want to change.
-    //todo: do the tearDown trick?
+    private OrderCloser orderCloser = new OrderCloser();
+
     public Order assembleOrder() {
-
         offerCoffeeVariety();
-
         Beverages beverages = getCoffeeType();
 
         offerCoffeeSize();
-
         CupSize cupSize = getCoffeeSize();
 
         int sugarAmount = getSugarAmount();
@@ -33,7 +31,7 @@ public class OrderReceiver {
 
         System.out.println("What would you like to drink? Here is a list of beverages:");
 
-        for (Beverages beverages : Beverages.values()){
+        for (Beverages beverages : Beverages.values()) {
             System.out.println(beverages);
         }
     }
@@ -43,19 +41,17 @@ public class OrderReceiver {
         System.out.println("What coffee size would you like? Here is a list of options:");
 
         for (CupSize cupSize : CupSize.values()) {
-            System.out.println(cupSize);
+            System.out.println(cupSize.toString().toLowerCase());
         }
     }
 
-    // todo: see if I should separate parts of method.
     private Beverages getCoffeeType() {
 
         boolean correctCoffeeType = true;
-        Beverages chosenBeverages = Beverages.ESPRESSO;
+        Beverages chosenBeverage = Beverages.ESPRESSO;
         int orderTriesCounter = 0;
 
         do {
-
             System.out.println("Please type your coffee order:");
 
             Scanner scanner = new Scanner(System.in);
@@ -65,25 +61,22 @@ public class OrderReceiver {
 
                 correctCoffeeType = coffeeType.equalsIgnoreCase(beverage.toString());
 
-                if (correctCoffeeType){
-                    return beverage;
+                if (correctCoffeeType) {
+                    chosenBeverage = beverage;
+                    return chosenBeverage;
                 }
             }
 
-            orderTriesCounter ++;
+            orderTriesCounter++;
 
-            if (orderTriesCounter>5){
-                System.out.println("Too many invalid order attempts. Goodbye!");
-                break;
-                //todo: see if I should add a system shutdown method.
-            }
+            limitAttemptNumber(orderTriesCounter);
 
             System.out.println("Invalid input, please try again.");
 
         }
         while (!correctCoffeeType);
 
-        return chosenBeverages;
+        return chosenBeverage;
     }
 
     private int getSugarAmount() {
@@ -99,20 +92,14 @@ public class OrderReceiver {
 
             try {
                 sugarAmount = scanner.nextInt();
-            }
-
-            catch (InputMismatchException e) {
+            } catch (InputMismatchException e) {
                 System.out.println("Invalid input, please try again.");
                 invalidInput = true;
             }
 
-            orderTriesCounter ++;
+            orderTriesCounter++;
 
-            if (orderTriesCounter>5){
-                System.out.println("Too many invalid order attempts. Goodbye!");
-                break;
-                //todo: see if I should add a system shutdown method.
-            }
+            limitAttemptNumber(orderTriesCounter);
 
         }
         while (invalidInput);
@@ -146,13 +133,9 @@ public class OrderReceiver {
 
             orderTriesCounter++;
 
-            if (orderTriesCounter > 5) {
-                System.out.println("Too many invalid order attempts. Goodbye!");
-                break;
-                //todo: I should add a system shutdown method.
-            }
+            limitAttemptNumber(orderTriesCounter);
 
-            if (invalidOrder){
+            if (invalidOrder) {
                 System.out.println("Invalid input, please try again.");
             }
         }
@@ -162,7 +145,6 @@ public class OrderReceiver {
     }
 
     private CupSize getCoffeeSize() {
-
         boolean correctCoffeeSize = true;
         CupSize chosenCupSize = CupSize.MEDIUM;
         int orderTriesCounter = 0;
@@ -177,37 +159,27 @@ public class OrderReceiver {
             for (CupSize cupSize : CupSize.values()) {
                 correctCoffeeSize = coffeeType.equalsIgnoreCase(cupSize.toString());
 
-                if (correctCoffeeSize){
-                    return cupSize;
+                if (correctCoffeeSize) {
+                    chosenCupSize = cupSize;
+                    return chosenCupSize;
                 }
             }
 
-            orderTriesCounter ++;
+            orderTriesCounter++;
 
-            if (orderTriesCounter>5){
-                System.out.println("Too many invalid order attempts. Goodbye!");
-                break;
-                //todo: see if I sould add a system shutdown method.
-            }
+            limitAttemptNumber(orderTriesCounter);
 
             System.out.println("Invalid input, please try again.");
-
         }
         while (!correctCoffeeSize);
 
         return chosenCupSize;
     }
 
-    public boolean closeOrder () {
-        System.out.println("orderComponents.Order complete. Do you want to make another order? (yes/no)");
-
-        Scanner scanner = new Scanner(System.in);
-        String customerResponse = scanner.nextLine();
-
-        return customerResponse.equalsIgnoreCase("yes");
-    }
-
-    public void closeCoffeeMachine () {
-        System.out.println("Goodbye!");
+    private void limitAttemptNumber(int orderTriesCounter) {
+        if (orderTriesCounter > 5) {
+            System.out.println("Too many invalid order attempts.");
+            orderCloser.closeOnError();
+        }
     }
 }

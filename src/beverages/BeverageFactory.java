@@ -1,11 +1,8 @@
 package beverages;
 
-import beverages.*;
-
 public class BeverageFactory {
 
-    //todo: add default parameter?
-    //todo: check all switch cases for breaks
+    private static final Beverage DEFAULT_BEVERAGE = new Espresso();
 
     public Beverage getBeverage(Beverages beverages) {
         switch (beverages) {
@@ -17,8 +14,10 @@ public class BeverageFactory {
                 return new Latte();
             case CAPPUCCINO:
                 return new Cappuccino();
+            case TEA:
+                return new Tea();
             default:
-                return new Espresso();
+                return DEFAULT_BEVERAGE;
         }
     }
 }

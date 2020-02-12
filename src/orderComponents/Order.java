@@ -6,21 +6,19 @@ import java.util.ArrayList;
 
 public class Order {
 
-    //todo: use a different object to prepare?
-
     public Beverages beverage;
     public int sugar;
     public boolean milk;
     public CupSize size;
 
-    public Order (Beverages beverage, int sugar, boolean milk, CupSize size){
+    public Order(Beverages beverage, int sugar, boolean milk, CupSize size) {
         this.beverage = beverage;
         this.sugar = sugar;
         this.milk = milk;
         this.size = size;
     }
 
-    public ArrayList<String> getOrderList (){
+    public ArrayList<String> getOrderList() {
 
         ArrayList<String> orderList = new ArrayList<>();
 
@@ -32,10 +30,8 @@ public class Order {
         return orderList;
     }
 
-
-    private String getOrderBeverage (){
-        String orderBeverage = beverage.toString().toLowerCase();
-        return orderBeverage.substring(0, 1).toUpperCase() + orderBeverage.substring(1);
+    private String getOrderBeverage() {
+        return beverage.toString();
     }
 
     private String getOrderSugar() {
@@ -54,18 +50,7 @@ public class Order {
         }
     }
 
-    // todo: default?
     private String getOrderSize() {
-        switch (size) {
-            case SMALL:
-                return "small";
-            case MEDIUM:
-                return "medium";
-            case LARGE:
-                return "large";
-            default:
-                return "regular";
-        }
+        return size.toString().toLowerCase();
     }
-
 }

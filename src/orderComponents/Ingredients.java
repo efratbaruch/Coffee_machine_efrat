@@ -5,6 +5,7 @@ public enum Ingredients {
     WATER,
     COFFEE_BEANS,
     SUGAR,
-    MILK
+    MILK,
+    TEA_BUG
 
 }

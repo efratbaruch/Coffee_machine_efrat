@@ -8,16 +8,18 @@ public class StockManager {
 
     private HashMap<Ingredients, Integer> stock = new HashMap<>();
 
+    private final int INITIAL_STOCK_QUANTITY = 20;
+    private final int MINIMUM_INGREDIENT_QUANTITY = 5;
+
     private static final StockManager INSTANCE = new StockManager();
 
-    //todo: make quantity constant
     private StockManager() {
-        for (Ingredients ingredients : Ingredients.values()){
-            stock.put(ingredients, 20);
+        for (Ingredients ingredient : Ingredients.values()) {
+            stock.put(ingredient, INITIAL_STOCK_QUANTITY);
         }
     }
 
-    public static StockManager getInstance(){
+    public static StockManager getInstance() {
         return INSTANCE;
     }
 
@@ -25,15 +27,15 @@ public class StockManager {
         return stock;
     }
 
-    //todo: either refill when necessary or refill every num of orders
-    void stockInspection() {
-
+    public void stockInspection() {
+        for (Ingredients ingredient : Ingredients.values()) {
+            if (stock.get(ingredient) < MINIMUM_INGREDIENT_QUANTITY) {
+                refillIngredient(ingredient);
+            }
+        }
     }
 
-    //todo: num for which I would refill should be constant and perhaps no logic here in inspection
-    public void refillIngredient(Ingredients ingredient){
-        if (stock.get(ingredient)<=5){
-            stock.put(ingredient, 20-stock.get(ingredient));
-        }
+    public void refillIngredient(Ingredients ingredient) {
+        stock.put(ingredient, INITIAL_STOCK_QUANTITY - stock.get(ingredient));
     }
 }

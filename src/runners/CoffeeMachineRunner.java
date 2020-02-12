@@ -1,13 +1,12 @@
 package runners;
 
-import ordermaking.CoffeeMakingManager;
+import ordermaking.OrderManager;
 
 public class CoffeeMachineRunner {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
-        new CoffeeMakingManager().getAndDeliverOrder();
+        new OrderManager().getAndDeliverOrder();
 
     }
-
 }

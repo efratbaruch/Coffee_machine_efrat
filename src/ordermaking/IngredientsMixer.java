@@ -6,16 +6,16 @@ import orderComponents.Order;
 
 import java.util.HashMap;
 
-public class CoffeeMixer {
+public class IngredientsMixer {
 
     private Order order;
     private HashMap<Ingredients, Integer> ingredientMap;
 
-    public CoffeeMixer (Order order){
+    public IngredientsMixer(Order order) {
         this.order = order;
     }
 
-    public HashMap <Ingredients, Integer>  getMixedIngredients () {
+    public HashMap<Ingredients, Integer> getMixedIngredients() {
         addIngredientsOfBeverage();
         addWaterIngredient();
         addMilkIngredient();
@@ -25,7 +25,7 @@ public class CoffeeMixer {
     }
 
     private void addIngredientsOfBeverage() {
-       ingredientMap = new BeverageFactory().getBeverage(order.beverage).getIngredients();
+        ingredientMap = new BeverageFactory().getBeverage(order.beverage).getIngredients();
     }
 
     private void addWaterIngredient() {
@@ -67,8 +67,7 @@ public class CoffeeMixer {
     private void addSugarIngredient() {
         if (ingredientMap.containsKey(Ingredients.SUGAR)) {
             ingredientMap.put(Ingredients.SUGAR, ingredientMap.get(Ingredients.SUGAR) + order.sugar);
-        }
-        else {
+        } else {
             ingredientMap.put(Ingredients.SUGAR, order.sugar);
         }
     }

@@ -2,28 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="376e9277-b9a5-4e75-9d2c-deae8e1b9f67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/stock/StockManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beverages/Tea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ordermaking/OrderManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/OrderCloser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/userinterface/OrderDelivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validators/ValidatorsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Beverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BeverageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/BeverageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Beverages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Beverages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Black.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Black.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cappuccino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Cappuccino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeMachineAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apimethods/CoffeeMachineAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeMachineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeMakingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordermaking/CoffeeMakingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordermaking/CoffeeMixer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CupSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderComponents/CupSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Espresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Espresso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ingredients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderComponents/Ingredients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Latte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Latte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderComponents/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrderInStockValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/OrderInStockValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrderMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordermaking/OrderMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrderReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apimethods/OrderReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/OrderValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StockManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Beverage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/BeverageFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/BeverageFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Beverages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Black.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Cappuccino.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CoffeeMachineAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CoffeeMachineRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CoffeeMakingManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CoffeeMixer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CoffeeMixer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/CupSize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Espresso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Ingredients.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Latte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Order$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/OrderInStockValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/OrderMaker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/OrderReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/OrderValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/StockManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Coffee_machine_efrat/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apimethods/CoffeeMachineAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apimethods/OrderReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userinterface/OrderReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Beverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/BeverageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/BeverageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Beverages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Beverages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Black.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Black.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Cappuccino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Cappuccino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Espresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Espresso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beverages/Latte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beverages/Latte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orderComponents/Ingredients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderComponents/Ingredients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orderComponents/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderComponents/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordermaking/CoffeeMakingManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordermaking/CoffeeMixer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordermaking/IngredientsMixer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordermaking/OrderMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordermaking/OrderMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stock/StockManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stock/StockManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/OrderInStockValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/OrderInStockValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/OrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/OrderValidator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,24 +69,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="125" />
+          <entry key="java" value="213" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="125" />
+          <entry key="JAVA" value="213" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
-          <entry key="java" value="11530" />
+          <entry key="dummy" value="30" />
+          <entry key="java" value="13047" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11530" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="JAVA" value="13047" />
+          <entry key="PLAIN_TEXT" value="59" />
         </counts>
       </usages-collector>
     </session>
@@ -69,110 +95,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validators/OrderValidator.java">
+        <entry file="file://$PROJECT_DIR$/src/ordermaking/OrderManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="-236">
+              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validators/OrderInStockValidator.java">
+        <entry file="file://$PROJECT_DIR$/src/userinterface/OrderCloser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ordermaking/CoffeeMakingManager.java">
+        <entry file="file://$PROJECT_DIR$/src/userinterface/OrderReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="135">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validators/Validator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stock/StockManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/orderComponents/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ordermaking/CoffeeMixer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ordermaking/OrderMaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apimethods/OrderReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#assembleOrder#0;class#OrderReceiver#0" />
+                <element signature="method#offerCoffeeVariety#0;class#OrderReceiver#0" />
+                <element signature="method#offerCoffeeSize#0;class#OrderReceiver#0" />
+                <element signature="method#getCoffeeType#0;class#OrderReceiver#0" />
                 <element signature="method#getSugarAmount#0;class#OrderReceiver#0" />
+                <element signature="method#getMilkPreference#0;class#OrderReceiver#0" />
                 <element signature="method#getCoffeeSize#0;class#OrderReceiver#0" />
+                <element signature="method#limitAttemptNumber#0;class#OrderReceiver#0" />
               </folding>
             </state>
           </provider>
@@ -205,16 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CoffeeMachineAPI.java" />
-        <option value="$PROJECT_DIR$/src/OrderReciever.java" />
-        <option value="$PROJECT_DIR$/src/CupSize.java" />
-        <option value="$PROJECT_DIR$/src/BeverageType.java" />
-        <option value="$PROJECT_DIR$/src/IIngredient.java" />
-        <option value="$PROJECT_DIR$/src/CoffeeBeans.java" />
-        <option value="$PROJECT_DIR$/src/Sugar.java" />
-        <option value="$PROJECT_DIR$/src/IDrink.java" />
-        <option value="$PROJECT_DIR$/src/OrderInStockValidtor.java" />
-        <option value="$PROJECT_DIR$/src/DrinkMatcher.java" />
         <option value="$PROJECT_DIR$/src/Ivalidator.java" />
         <option value="$PROJECT_DIR$/src/IValidator.java" />
         <option value="$PROJECT_DIR$/src/Validator.java" />
@@ -239,30 +190,40 @@
         <option value="$PROJECT_DIR$/src/Latte.java" />
         <option value="$PROJECT_DIR$/src/Order.java" />
         <option value="$PROJECT_DIR$/src/Validators/OrderInStockValidator.java" />
-        <option value="$PROJECT_DIR$/src/beverages/Beverage.java" />
-        <option value="$PROJECT_DIR$/src/beverages/Black.java" />
-        <option value="$PROJECT_DIR$/src/beverages/Cappuccino.java" />
-        <option value="$PROJECT_DIR$/src/beverages/Espresso.java" />
-        <option value="$PROJECT_DIR$/src/beverages/Latte.java" />
         <option value="$PROJECT_DIR$/src/OrderValidator.java" />
-        <option value="$PROJECT_DIR$/src/beverages/BeverageFactory.java" />
-        <option value="$PROJECT_DIR$/src/orderComponents/CupSize.java" />
         <option value="$PROJECT_DIR$/src/validators/Validator.java" />
         <option value="$PROJECT_DIR$/src/apimethods/OrderReceiver.java" />
-        <option value="$PROJECT_DIR$/src/orderComponents/Order.java" />
-        <option value="$PROJECT_DIR$/src/validators/OrderValidator.java" />
-        <option value="$PROJECT_DIR$/src/validators/OrderInStockValidator.java" />
         <option value="$PROJECT_DIR$/src/ordermaking/CoffeeMixer.java" />
         <option value="$PROJECT_DIR$/src/stock/StockManager.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Beverage.java" />
+        <option value="$PROJECT_DIR$/src/validators/OrderInStockValidator.java" />
+        <option value="$PROJECT_DIR$/src/validators/ValidatorsManager.java" />
+        <option value="$PROJECT_DIR$/src/ordermaking/OrderMaker.java" />
+        <option value="$PROJECT_DIR$/src/orderComponents/Order.java" />
         <option value="$PROJECT_DIR$/src/ordermaking/CoffeeMakingManager.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Beverages.java" />
+        <option value="$PROJECT_DIR$/src/orderComponents/Ingredients.java" />
+        <option value="$PROJECT_DIR$/src/orderComponents/CupSize.java" />
+        <option value="$PROJECT_DIR$/src/userinterface/OrderReceiver.java" />
+        <option value="$PROJECT_DIR$/src/beverages/BeverageFactory.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Black.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Espresso.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Cappuccino.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Tea.java" />
+        <option value="$PROJECT_DIR$/src/beverages/Latte.java" />
+        <option value="$PROJECT_DIR$/src/ordermaking/IngredientsMixer.java" />
+        <option value="$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java" />
+        <option value="$PROJECT_DIR$/src/userinterface/OrderDelivery.java" />
+        <option value="$PROJECT_DIR$/src/userinterface/OrderCloser.java" />
+        <option value="$PROJECT_DIR$/src/validators/OrderValidator.java" />
+        <option value="$PROJECT_DIR$/src/ordermaking/OrderManager.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="44" />
-    <option name="y" value="52" />
-    <option name="width" value="1225" />
-    <option name="height" value="731" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -282,6 +243,48 @@
               <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="beverages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="orderComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ordermaking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="runners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="userinterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Coffee_machine_efrat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coffee_machine_efrat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="validators" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -291,7 +294,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581451032327" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581541887644" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -334,6 +337,14 @@
       <option name="presentableId" value="Default" />
       <updated>1580410323931</updated>
     </task>
+    <task id="LOCAL-00001" summary="Organized project to packages">
+      <created>1581451244929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581451244929</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -346,8 +357,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -357,16 +367,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289855" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32994187" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.2942029" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.29360464" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32994187" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289855" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -376,37 +386,14 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32994187" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997093" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.2942029" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32994187" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Orgenized project to packages" />
+    <MESSAGE value="Organized project to packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organized project to packages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/OrderReciever.java" />
@@ -417,64 +404,24 @@
     <entry file="file://$PROJECT_DIR$/src/Water.java" />
     <entry file="file://$PROJECT_DIR$/src/Milk.java" />
     <entry file="file://$PROJECT_DIR$/src/Ingredient.java" />
-    <entry file="file://$PROJECT_DIR$/src/orderComponents/Ingredients.java">
+    <entry file="file://$PROJECT_DIR$/src/runners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userinterface/CoffeeMachineAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beverages/Black.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beverages/Cappuccino.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beverages/Espresso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beverages/Latte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beverages/Beverages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beverages/Beverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -483,118 +430,225 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beverages/BeverageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/orderComponents/CupSize.java">
+    <entry file="file://$PROJECT_DIR$/src/beverages/Beverages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/apimethods/CoffeeMachineAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/beverages/Black.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apimethods/OrderReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getSugarAmount#0;class#OrderReceiver#0" />
-            <element signature="method#getCoffeeSize#0;class#OrderReceiver#0" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beverages/Espresso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beverages/Cappuccino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beverages/Tea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beverages/Latte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/orderComponents/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Order#0;class#Order#0" />
+            <element signature="method#getOrderList#0;class#Order#0" />
+            <element signature="method#getOrderSugar#0;class#Order#0" />
+            <element signature="method#getOrderMilk#0;class#Order#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orderComponents/Ingredients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/orderComponents/CupSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ordermaking/IngredientsMixer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ordermaking/OrderMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="10" column="10" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stock/StockManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="6" column="13" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userinterface/OrderDelivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validators/ValidatorsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/validators/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validators/OrderValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="17" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/validators/OrderInStockValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="431">
+          <caret line="38" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runners.java">
+    <entry file="file://$PROJECT_DIR$/src/validators/OrderValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stock/StockManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runners/CoffeeMachineRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ordermaking/CoffeeMixer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ordermaking/CoffeeMakingManager.java">
+    <entry file="file://$PROJECT_DIR$/src/ordermaking/OrderManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="-236">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userinterface/OrderCloser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userinterface/OrderReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#assembleOrder#0;class#OrderReceiver#0" />
+            <element signature="method#offerCoffeeVariety#0;class#OrderReceiver#0" />
+            <element signature="method#offerCoffeeSize#0;class#OrderReceiver#0" />
+            <element signature="method#getCoffeeType#0;class#OrderReceiver#0" />
+            <element signature="method#getSugarAmount#0;class#OrderReceiver#0" />
+            <element signature="method#getMilkPreference#0;class#OrderReceiver#0" />
+            <element signature="method#getCoffeeSize#0;class#OrderReceiver#0" />
+            <element signature="method#limitAttemptNumber#0;class#OrderReceiver#0" />
           </folding>
         </state>
       </provider>

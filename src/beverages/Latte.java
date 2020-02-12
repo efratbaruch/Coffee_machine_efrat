@@ -8,7 +8,7 @@ public class Latte implements Beverage {
 
     private HashMap<Ingredients, Integer> latteIngredients = new HashMap<>();
 
-    Latte(){
+    Latte() {
         latteIngredients.put(Ingredients.WATER, 1);
         latteIngredients.put(Ingredients.COFFEE_BEANS, 1);
         latteIngredients.put(Ingredients.MILK, 2);
@@ -16,8 +16,7 @@ public class Latte implements Beverage {
     }
 
     @Override
-    public HashMap<Ingredients, Integer> getIngredients(){
+    public HashMap<Ingredients, Integer> getIngredients() {
         return latteIngredients;
     }
-
 }

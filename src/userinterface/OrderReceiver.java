@@ -7,8 +7,6 @@ import orderComponents.Order;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//todo: search for exception protection for whole project: from outside
-
 public class OrderReceiver {
 
     private OrderCloser orderCloser = new OrderCloser();
@@ -58,8 +56,12 @@ public class OrderReceiver {
             String coffeeType = scanner.nextLine();
 
             for (Beverages beverage : Beverages.values()) {
-
-                correctCoffeeType = coffeeType.equalsIgnoreCase(beverage.toString());
+                try {
+                    correctCoffeeType = coffeeType.equalsIgnoreCase(beverage.toString());
+                } catch (NullPointerException e) {
+                    System.out.println("Invalid input!");
+                    orderCloser.closeOnError();
+                }
 
                 if (correctCoffeeType) {
                     chosenBeverage = beverage;
@@ -79,13 +81,51 @@ public class OrderReceiver {
         return chosenBeverage;
     }
 
-    private int getSugarAmount() {
-
-        int sugarAmount = 0;
-        boolean invalidInput = false;
+    private CupSize getCoffeeSize() {
+        boolean correctCoffeeSize = true;
+        CupSize chosenCupSize = CupSize.MEDIUM;
         int orderTriesCounter = 0;
 
         do {
+
+            System.out.println("Please enter your coffee size choice:");
+
+            Scanner scanner = new Scanner(System.in);
+            String coffeeType = scanner.nextLine();
+
+            for (CupSize cupSize : CupSize.values()) {
+                try {
+                    correctCoffeeSize = coffeeType.equalsIgnoreCase(cupSize.toString());
+                } catch (NullPointerException e) {
+                    System.out.println("Invalid input!");
+                    orderCloser.closeOnError();
+                }
+                if (correctCoffeeSize) {
+                    chosenCupSize = cupSize;
+                    return chosenCupSize;
+                }
+            }
+
+            orderTriesCounter++;
+
+            limitAttemptNumber(orderTriesCounter);
+
+            System.out.println("Invalid input, please try again.");
+        }
+        while (!correctCoffeeSize);
+
+        return chosenCupSize;
+    }
+
+    private int getSugarAmount() {
+
+        int sugarAmount = 0;
+        boolean invalidInput;
+        int orderTriesCounter = 0;
+
+        do {
+            invalidInput = false;
+
             System.out.println("How many sugar cubes would you like in your coffee?");
 
             Scanner scanner = new Scanner(System.in);
@@ -100,7 +140,6 @@ public class OrderReceiver {
             orderTriesCounter++;
 
             limitAttemptNumber(orderTriesCounter);
-
         }
         while (invalidInput);
 
@@ -119,16 +158,20 @@ public class OrderReceiver {
             Scanner scanner = new Scanner(System.in);
             String milkResponse = scanner.nextLine();
 
-            //todo: protect from null-pointer
-            switch (milkResponse.toLowerCase()) {
-                case "yes":
-                    addMilk = true;
-                    invalidOrder = false;
-                    break;
-                case "no":
-                    addMilk = false;
-                    invalidOrder = false;
-                    break;
+            try {
+                switch (milkResponse.toLowerCase()) {
+                    case "yes":
+                        addMilk = true;
+                        invalidOrder = false;
+                        break;
+                    case "no":
+                        addMilk = false;
+                        invalidOrder = false;
+                        break;
+                }
+            } catch (NullPointerException e) {
+                System.out.println("Invalid input!");
+                orderCloser.closeOnError();
             }
 
             orderTriesCounter++;
@@ -142,38 +185,6 @@ public class OrderReceiver {
         while (invalidOrder);
 
         return addMilk;
-    }
-
-    private CupSize getCoffeeSize() {
-        boolean correctCoffeeSize = true;
-        CupSize chosenCupSize = CupSize.MEDIUM;
-        int orderTriesCounter = 0;
-
-        do {
-
-            System.out.println("Please enter your coffee size choice:");
-
-            Scanner scanner = new Scanner(System.in);
-            String coffeeType = scanner.nextLine();
-
-            for (CupSize cupSize : CupSize.values()) {
-                correctCoffeeSize = coffeeType.equalsIgnoreCase(cupSize.toString());
-
-                if (correctCoffeeSize) {
-                    chosenCupSize = cupSize;
-                    return chosenCupSize;
-                }
-            }
-
-            orderTriesCounter++;
-
-            limitAttemptNumber(orderTriesCounter);
-
-            System.out.println("Invalid input, please try again.");
-        }
-        while (!correctCoffeeSize);
-
-        return chosenCupSize;
     }
 
     private void limitAttemptNumber(int orderTriesCounter) {

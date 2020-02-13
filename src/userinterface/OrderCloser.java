@@ -4,22 +4,29 @@ import java.util.Scanner;
 
 public class OrderCloser {
 
-    //todo: search for exception protection for whole project: from outside
-
     public boolean closeOrder() {
+        boolean anotherOrder = false;
+
         System.out.println("Order complete. Do you want to make another order? (yes/no)");
 
         Scanner scanner = new Scanner(System.in);
         String customerResponse = scanner.nextLine();
 
-        return customerResponse.equalsIgnoreCase("yes");
+        try {
+            anotherOrder = customerResponse.equalsIgnoreCase("yes");
+        } catch (NullPointerException e) {
+            System.out.println("Invalid input!");
+            new OrderCloser().closeOnError();
+        }
+
+        return anotherOrder;
     }
 
     public void closeCoffeeMachine() {
         System.out.println("Goodbye!");
     }
 
-    public void closeOnError() {
+    void closeOnError() {
         System.out.println("Goodbye!");
         System.exit(1);
     }

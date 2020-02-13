@@ -4,6 +4,8 @@ import orderComponents.Ingredients;
 
 import java.util.HashMap;
 
+//todo: move recipe to constants
+
 public class Black implements Beverage {
 
     private HashMap<Ingredients, Integer> blackIngredients = new HashMap<>();

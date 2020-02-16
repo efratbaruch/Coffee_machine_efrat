@@ -16,7 +16,7 @@ public class OrderCloser {
             anotherOrder = customerResponse.equalsIgnoreCase("yes");
         } catch (NullPointerException e) {
             System.out.println("Invalid input!");
-            new OrderCloser().closeOnError();
+            closeOnError();
         }
 
         return anotherOrder;

@@ -13,8 +13,9 @@ import java.util.ArrayList;
 
 public class OrderManager {
 
+    private static final int NUM_TRIGGER_INSPECTION = 5;
+
     private int numberOfConsecutiveOrders = 0;
-    private final int NUM_TRIGGER_INSPECTION = 5;
 
     public void getAndDeliverOrder() {
 
@@ -55,5 +56,4 @@ public class OrderManager {
             StockManager.getInstance().stockInspection();
         }
     }
-
 }

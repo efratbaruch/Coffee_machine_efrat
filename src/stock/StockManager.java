@@ -11,16 +11,10 @@ public class StockManager {
     private final int INITIAL_STOCK_QUANTITY = 20;
     private final int MINIMUM_INGREDIENT_QUANTITY = 5;
 
-    private static final StockManager INSTANCE = new StockManager();
-
-    private StockManager() {
+    StockManager() {
         for (Ingredients ingredient : Ingredients.values()) {
             stock.put(ingredient, INITIAL_STOCK_QUANTITY);
         }
-    }
-
-    public static StockManager getInstance() {
-        return INSTANCE;
     }
 
     public HashMap<Ingredients, Integer> getStock() {

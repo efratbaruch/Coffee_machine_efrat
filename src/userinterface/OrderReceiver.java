@@ -3,6 +3,7 @@ package userinterface;
 import beverages.Beverages;
 import orderComponents.CupSize;
 import orderComponents.Order;
+import ordermaking.OrderManager;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -192,5 +193,13 @@ public class OrderReceiver {
             System.out.println("Too many invalid order attempts.");
             orderCloser.closeOnError();
         }
+    }
+
+    private <T extends Enum<T>> T foo(Class<T> clazz, T defaultValue, String strValue) {
+        for (T enumConstant : clazz.getEnumConstants()) {
+            return enumConstant;
+        }
+
+        return defaultValue;
     }
 }

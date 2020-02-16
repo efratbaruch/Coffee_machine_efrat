@@ -2,8 +2,6 @@ package beverages;
 
 public class BeverageFactory {
 
-    private static final Beverage DEFAULT_BEVERAGE = new Espresso();
-
     public Beverage getBeverage(Beverages beverages) {
         switch (beverages) {
             case ESPRESSO:
@@ -14,10 +12,9 @@ public class BeverageFactory {
                 return new Latte();
             case CAPPUCCINO:
                 return new Cappuccino();
+            default:
             case TEA:
                 return new Tea();
-            default:
-                return DEFAULT_BEVERAGE;
         }
     }
 }
